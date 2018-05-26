@@ -1,0 +1,27 @@
+INF553 Assignment 2: PCY and SON
+
+Roshani_Mangalore_Readme_file:
+
+Versions:
+
+1. Python:	 2.7.12
+2. Spark:  	 2.2.0
+3. Hadoop: 	 2.7.5
+4. Java: 	 1.8.0_151
+
+Execution Steps:
+
+A. Execution steps for Task 1 (PCY):
+	***Spark is used for the implementaion of PCY***
+	
+	1. bin/spark-submit Roshani_Mangalore_PCY.py baskets.txt 11 29 150 2500 output-dir
+
+	general: bin/spark-submit Roshani_Mangalore_PCY.py baskets.txt <a> <b> <N> <s> <output-dir>
+		
+	***output-dir is where the output files named 'frequentset.txt' and 'candidates.txt' gets created****
+
+B. Execution steps for Task 2 (SON):
+
+	1. bin/spark-submit Roshani_Mangalore_SON.py baskets.txt 0.2 output.txt
+	
+	***output.txt is the output file which gets created****
