@@ -1,0 +1,25 @@
+Roshani_Mangalore_Readme_file:
+
+Versions:
+
+1. Python:	 2.7.12
+2. Spark:  	 2.2.0
+3. Hadoop: 	 2.7.5
+4. Java: 	 1.8.0_151
+
+Execution Steps:
+
+A. Execution steps for Task 1 (Map Reduce):
+	
+	1. hadoop com.sun.tools.javac.Main Roshani_Mangalore_Average.java
+	2. jar cf Roshani_Mangalore_avg.jar Roshani_Mangalore_Average*.class
+	3. bin/hadoop jar Roshani_Mangalore_avg.jar Roshani_Mangalore_Average input-dir output-dir
+	
+	***where Roshani_Mangalore_avg.jar is the jar file created for 'Roshani_Mangalore_Average' class, input-dir contains a single file: menu.csv and 
+	output-dir is where output (part-nnnnn) gets created****
+
+B. Execution steps for Task 2 (Spark):
+
+	1. bin/spark-submit Roshani_Mangalore_Average.py menu.csv output-dir
+	
+	***output-dir is where the output file named 'Roshani_Mangalore_task2.txt' gets created****
